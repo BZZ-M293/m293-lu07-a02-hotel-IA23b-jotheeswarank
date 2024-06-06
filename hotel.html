@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Hotelzimmer-Buchungssystem</title>
+   <meta charset="UTF-8">
+   <title>Hotelzimmer-Buchungssystem</title>
 
 </head>
 <body>
 
 <h1>Hotelzimmer-Buchungssystem</h1>
 
+<form action="https://it.bzz.ch/demo/formdata/index.php" method="post">
+   <fieldset>
+      <legend>Zimmertypen</legend>
+      <label>Zimmerarten:
+         <select name="Zimmertyp[]" size="5" multiple>
+            <option>Einzelzimmer</option>
+            <option>Doppelzimmer</option>
+            <option>Twin-Zimmer</option>
+            <option>Deluxe-Zimmer</option>
+            <option>Suite</option>
+            <option>Familienzimmer</option>
+            <option>Junior Suite</option>
+            <option>Studio</option>
+            <option>Executive-Zimmer</option>
+            <option>Penthouse</option>
+         </select>
+      </label>
+   </fieldset>
+  <br>
+   <fieldset>
+      <legend>Zusatzleistungen</legend>
+      <label>
+         <input type="checkbox" name="zusatzleistungen[]" value="Frühstück">Frühstück
+      </label><br>
+      <label>
+         <input type="checkbox" name="zusatzleistungen[]" value="Flughafentransfer">Flughafentransfer
+      </label><br>
+      <label>
+         <input type="checkbox" name="zusatzleistungen[]" value="Spa-Zugang">Spa-Zugang
+      </label><br>
+      <label>
+         <input type="checkbox" name="zusatzleistungen[]" value="Fitnessstudio-Zugang">Fitnessstudio-Zugang
+      </label><br>
+      <label>
+         <input type="checkbox" name="zusatzleistungen[]" value="Parkplatz">Parkplatz
+      </label><br>
+      <label>
+         <input type="checkbox" name="zusatzleistungen[]" value="WLAN">WLAN
+      </label><br>
+      <label>
+         <input type="checkbox" name="zusatzleistungen[]" value="Zimmerservice">Zimmerservice
+      </label><br>
+      <label>
+         <input type="checkbox" name="zusatzleistungen[]" value="Minibar">Minibar
+      </label><br>
+      <label>
+         <input type="checkbox" name="zusatzleistungen[]" value="Wäscheservice">Wäscheservice
+      </label><br>
+      <label>
+         <input type="checkbox" name="zusatzleistungen[]" value="Konferenzraum">Konferenzraum
+      </label><br>
+   </fieldset>
+  <br>
+ <button type="submit">Submit</button>
+</form>
 
 </body>
 </html>
